@@ -1,13 +1,180 @@
+/* 
+  =============
+  Variables
+  =============
+*/
+:root {
+	--primaryColor: rgb(58, 202, 1);
+	--mainBlack: #222;
+	--mainWhite: #fff;
+	--offWhite: #f7f7f7;
+	--darkGrey: #afafaf;
+	--mainTransition: all 0.3s linear;
+	--mainSpacing: 0.2rem;
+	--dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+	--radius: 0.5rem;
+}
+/* 
+  =============
+  Global Styles
+  =============
+*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	font-family: sans-serif;
+	color: var(--mainBlack);
+	background: var(--mainWhite);
+	line-height: 1;
+	overflow-x: hidden;
+}
+a {
+	text-decoration: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+img {
+	width: 100%;
+	display: block;
+}
+
+h1,
+h2,
+h3 {
+	text-transform: capitalize;
+	margin-bottom: 1.25rem;
+}
+h1 {
+	font-size: 3rem;
+}
+h2 {
+	margin-bottom: 0;
+}
+p {
+	font-weight: 300;
+}
+
+/* HEADER */
+
+.header {
+	position: fixed;
+	width: 100%;
+	background: var(--mainBlack);
+	font-weight: 400;
+	font-size: 1.3rem;
+	color: var(--mainWhite);
+	letter-spacing: var(--mainSpacing);
+	text-align: center;
+	text-transform: capitalize;
+	padding: 10px;
+	box-shadow: var(--dark-shadow);
+	z-index: 100;
+}
+
+/* HERO Section */
+
+.hero-section {
+	position: absolute;
+	top: 0%;
+	right: 0;
+	bottom: 0;
+}
+
+.portfolio {
+	color: var(--primaryColor);
+}
+
+.video-container {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.banner {
+	position: absolute;
+	margin: auto;
+	top: 50%;
+	left: 30%;
+	color: var(--mainWhite);
+}
+
+.banner h2 {
+	text-align: left;
+	text-transform: uppercase;
+	font-size: 2rem;
+}
+
+.name {
+	color: var(--primaryColor);
+}
+
+.banner-description {
+	text-align: left;
+	font-size: 1rem;
+	margin-bottom: 2rem;
+}
+
+.banner span {
+	font-weight: bold;
+	font-size: 1.5rem;
+}
+
+.banner-btn {
+	color: white;
+	text-align: center;
+	background: transparent;
+	font-weight: bold;
+	text-transform: capitalize;
+	margin-left: 5rem;
+	padding: 0.5rem 2rem;
+	border: 2px solid var(--primaryColor);
+	border-radius: var(--radius);
+	cursor: pointer;
+	outline: 0;
+}
+
+.banner-btn:hover {
+	text-align: center;
+	background: transparent;
+	padding: 0.5rem 2rem;
+	border-radius: var(--radius);
+	cursor: pointer;
+	outline: 0;
+}
+
+@media screen and (min-width: 768px) {
+	.banner {
+		top: 50%;
+		left: 30%;
+	}
+
+	.banner h2 {
+		text-align: left;
+		font-size: 4rem;
+	}
+
+	.name {
+		color: var(--primaryColor);
+	}
+
+	.banner span {
+		font-weight: bold;
+		font-size: 2rem;
+	}
+	.banner-description {
+		font-size: 1.3rem;
+	}
+
+	.banner-btn {
+		margin-left: 20rem;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.banner h2 {
+		text-align: center;
+	}
 }

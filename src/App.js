@@ -1,10 +1,12 @@
 import React from 'react';
-import './App.css';
+import Header from './Components/Header/Header';
+import MainSection from './Components/MainSection/MainSection';
 
 const App = () => {
 	return (
-		<div className="App">
-			<h1>My portfolio page</h1>
+		<div>
+			<Header />
+			<MainSection />
 		</div>
 	);
 };
