@@ -3,7 +3,7 @@ import HeroWelcomeBanner from './HeroBanner/HeroWelcomeBanner';
 
 const MainSection = () => {
 	return (
-		<section className="content-holder">
+		<section className="content">
 			<HeroWelcomeBanner />
 		</section>
 	);

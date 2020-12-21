@@ -4,15 +4,13 @@
   =============
 */
 :root {
-	--primaryColor: rgb(58, 202, 1);
+	--primaryColor: rgb(0, 207, 0);
 	--mainBlack: #222;
 	--mainWhite: #fff;
 	--offWhite: #f7f7f7;
 	--darkGrey: #afafaf;
 	--mainTransition: all 0.3s linear;
 	--mainSpacing: 0.2rem;
-	--dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-	--radius: 0.5rem;
 }
 /* 
   =============
@@ -28,8 +26,7 @@ body {
 	font-family: sans-serif;
 	color: var(--mainBlack);
 	background: var(--mainWhite);
-	line-height: 1;
-	overflow-x: hidden;
+	line-height: 1.5;
 }
 a {
 	text-decoration: none;
@@ -44,6 +41,7 @@ h1,
 h2,
 h3 {
 	text-transform: capitalize;
+	letter-spacing: var(--mainSpacing);
 	margin-bottom: 1.25rem;
 }
 h1 {
@@ -52,120 +50,235 @@ h1 {
 h2 {
 	margin-bottom: 0;
 }
-p {
-	font-weight: 300;
+
+/* button */
+.btn {
+	display: inline-block;
+	padding: 0.5rem 1rem;
+	text-transform: capitalize;
+	border: 3px solid var(--mainBlack);
+	color: var(--mainWhite);
+	margin: 3rem;
+	transition: var(--mainTransition);
 }
-
-/* HEADER */
-
+.btn:hover {
+	background: var(--primaryColor);
+	color: var(--mainWhite);
+}
+/* 
+  =============
+  Lines Layout
+  =============
+*/
 .header {
 	position: fixed;
+	display: flex;
+	justify-content: space-between;
 	width: 100%;
 	background: var(--mainBlack);
-	font-weight: 400;
-	font-size: 1.3rem;
 	color: var(--mainWhite);
-	letter-spacing: var(--mainSpacing);
 	text-align: center;
-	text-transform: capitalize;
-	padding: 10px;
-	box-shadow: var(--dark-shadow);
-	z-index: 100;
-}
-
-/* HERO Section */
-
-.hero-section {
-	position: absolute;
-	top: 0%;
-	right: 0;
-	bottom: 0;
+	padding-top: 1rem;
+	z-index: 101;
 }
 
 .portfolio {
 	color: var(--primaryColor);
 }
 
-.video-container {
+	font-weight: 400;
+	margin-left: 1rem;
+}
+
+.burger-menu-icon {
+	font-size: 1.5rem;
+	margin-right: 1rem;
+}
+
+.navbar {
+	background: var(--darkGrey);
+	margin-top: 3.5rem;
+	margin-left: 1rem;
+	padding-right: 2rem;
+	padding-bottom: 2rem;
+	border-radius: 10px;
+	z-index: 100;
+}
+
+.show {
+	transition: var(--mainTransition);
+	position: fixed;
+}
+
+.navbar li {
+	list-style-type: none;
+}
+.navbar a {
+	padding: 1rem;
+	display: inline-block;
+	text-transform: capitalize;
+	letter-spacing: var(--mainSpacing);
+	font-size: 1.2rem;
+	color: var(--mainBlack);
+	transition: var(--mainTransition);
+}
+.navbar a:hover {
+	color: var(--mainWhite);
+}
+.content {
+	height: 88vh;
+	margin-top: 3.5rem;
+	overflow-y: scroll;
+}
+.content p {
+	font-size: 1rem;
+}
+.sidebar {
+	background: var(--primaryColor);
+	padding: 1rem 0;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	justify-items: center;
+	color: var(--mainWhite);
+	font-size: 1.2rem;
+	z-index: 98;
+}
+
+.main {
+	min-height: 100vh;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto auto 1fr auto auto;
+}
+
+/* Video Hero Welcome */
+
+.welcome-section {
+	min-height: 100vh;
 	position: relative;
+}
+
+.video-container {
+	position: absolute;
+	top: 0;
+	left: 0;
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
+	z-index: -2;
 }
 
-.banner {
+.welcome-section::after {
+	content: '';
 	position: absolute;
-	margin: auto;
-	top: 50%;
-	left: 30%;
-	color: var(--mainWhite);
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: white;
+	opacity: 0.05;
+	z-index: -1;
 }
 
-.banner h2 {
-	text-align: left;
+.hero-banner {
+	position: absolute;
+	top: 40%;
+	left: 30%;
+}
+
+.hero-banner h2 {
+	color: var(--mainWhite);
 	text-transform: uppercase;
-	font-size: 2rem;
+	font-size: 2.5rem;
 }
 
 .name {
 	color: var(--primaryColor);
 }
 
-.banner-description {
-	text-align: left;
-	font-size: 1rem;
+.description {
+	color: var(--mainWhite);
+	font-size: 10rem;
 	margin-bottom: 2rem;
 }
 
-.banner span {
+.job-title {
+	color: var(--mainWhite);
 	font-weight: bold;
-	font-size: 1.5rem;
+	font-size: 1.4rem;
 }
 
 .banner-btn {
-	color: white;
-	text-align: center;
-	background: transparent;
+	padding: 1rem 2rem;
+	color: var(--mainWhite);
 	font-weight: bold;
-	text-transform: capitalize;
+	border: 1px solid var(--primaryColor);
 	margin-left: 5rem;
-	padding: 0.5rem 2rem;
-	border: 2px solid var(--primaryColor);
-	border-radius: var(--radius);
-	cursor: pointer;
-	outline: 0;
+	border-radius: 5px;
+	transition: var(--mainTransition);
 }
 
 .banner-btn:hover {
-	text-align: center;
-	background: transparent;
-	padding: 0.5rem 2rem;
-	border-radius: var(--radius);
-	cursor: pointer;
-	outline: 0;
+	padding: 1rem 2rem;
+	color: var(--mainBlack);
+	background: var(--primaryColor);
+	font-weight: bold;
+	border: 1px solid var(--mainBlack);
+	border-radius: 5px;
 }
 
 @media screen and (min-width: 768px) {
-	.banner {
-		top: 50%;
-		left: 30%;
+	.header {
+		display: block;
 	}
 
-	.banner h2 {
-		text-align: left;
-		font-size: 4rem;
+	.header-title {
+		font-size: 2rem;
 	}
 
-	.name {
-		color: var(--primaryColor);
+	.navbar {
+		margin-top: 5rem;
+		display: block;
+		position: relative;
+		margin-left: 0;
+		border-radius: 0;
+		padding-right: 0;
+		padding-bottom: 0;
 	}
 
-	.banner span {
+	.burger-menu-icon {
+		display: none;
+	}
+
+	.navbar ul {
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+		justify-items: center;
+	}
+	.content {
+		margin-top: 0rem;
+		height: 100vh;
+	}
+
+	.hero-banner h2 {
+		font-size: 3.5rem;
+	}
+
+	.banner-description {
+		font-size: 5;
+	}
+
+	.banner-description span {
+		color: var(--mainWhite);
 		font-weight: bold;
 		font-size: 2rem;
 	}
-	.banner-description {
-		font-size: 1.3rem;
+
+	.banner-btn {
+		padding: 1rem 2rem;
+		color: var(--mainWhite);
+		border: 1px solid var(--primaryColor);
+		margin-left: 5rem;
 	}
 
 	.banner-btn {
@@ -174,7 +287,40 @@ p {
 }
 
 @media screen and (min-width: 992px) {
-	.banner h2 {
-		text-align: center;
+	.main {
+		grid-template-columns: [start] 200px [col-1-end] 1fr [col-2-end] 50px [end];
+		grid-template-rows: [start] auto [row-1-end] 1fr [row-2-end] auto [end];
+	}
+	.header {
+		grid-column: start/end;
+		grid-row: start/row-1-end;
+	}
+	.navbar {
+		grid-column: start/col-1-end;
+		grid-row: row-1-end/row-2-end;
+	}
+	.content {
+		margin-top: 3.5rem;
+
+		grid-column: col-1-end/col-2-end;
+		grid-row: row-1-end/row-2-end;
+	}
+	.sidebar {
+		grid-column: col-2-end/end;
+		grid-row: row-1-end/row-2-end;
+	}
+	.footer {
+		grid-column: start/end;
+		grid-template-rows: row-2-end/end;
+	}
+	.navbar ul {
+		grid-template-columns: 1fr;
+		min-height: 100%;
+		align-items: center;
+	}
+	.sidebar {
+		grid-template-columns: 1fr;
+		align-items: center;
+		background: var(--darkGrey);
 	}
 }
