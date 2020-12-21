@@ -317,6 +317,9 @@ h2 {
 		grid-row: row-1-end/row-2-end;
 	}
 	.sidebar {
+		grid-template-columns: 1fr;
+		align-items: center;
+		border-radius: 1px;
 		grid-column: col-2-end/end;
 		grid-row: row-1-end/row-2-end;
 	}
@@ -324,10 +327,6 @@ h2 {
 	.navbar ul {
 		grid-template-columns: 1fr;
 		min-height: 100%;
-		align-items: center;
-	}
-	.sidebar {
-		grid-template-columns: 1fr;
 		align-items: center;
 	}
 }

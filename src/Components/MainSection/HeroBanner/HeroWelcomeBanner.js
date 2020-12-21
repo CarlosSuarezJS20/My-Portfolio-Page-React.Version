@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import video from '../../../videos/video.mp4';
 
 const HeroWelcomeBanner = () => {
