@@ -6,7 +6,7 @@ const Header = (props) => {
 	return (
 		<header className="header">
 			<h1 className="header-title">
-				carlos suarez' <strong className="portfolio">portfolio</strong>
+				carlos suarez' <span className="portfolio">{'< portfolio />'}</span>
 			</h1>
 			<FontAwesomeIcon
 				icon={faBars}

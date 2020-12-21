@@ -27,6 +27,7 @@ body {
 	color: var(--mainBlack);
 	background: var(--mainWhite);
 	line-height: 1.5;
+	overflow-y: hidden;
 }
 a {
 	text-decoration: none;
@@ -83,12 +84,13 @@ h2 {
 }
 
 .portfolio {
-	color: var(--primaryColor);
+	color: rgb(255, 150, 52);
+	font-weight: 600;
 }
 
 .header-title {
 	font-size: 1rem;
-	font-weight: 400;
+	font-weight: 300;
 	margin-left: 1rem;
 }
 
@@ -98,7 +100,7 @@ h2 {
 }
 
 .navbar {
-	background: var(--darkGrey);
+	background: var(--mainBlack);
 	margin-top: 3.5rem;
 	margin-left: 1rem;
 	display: none;
@@ -123,25 +125,28 @@ h2 {
 	text-transform: capitalize;
 	letter-spacing: var(--mainSpacing);
 	font-size: 1.2rem;
-	color: var(--mainBlack);
+	color: var(--mainWhite);
 	transition: var(--mainTransition);
 }
 .navbar a:hover {
 	color: var(--mainWhite);
 }
+
 .content {
 	height: 88vh;
 	margin-top: 3.5rem;
 	overflow-y: scroll;
 }
+
 .content p {
 	font-size: 1rem;
 }
+
 .sidebar {
-	background: var(--primaryColor);
-	padding: 1rem 0;
+	background: var(--mainBlack);
+	padding: 0.5rem 0;
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
+	grid-template-columns: repeat(2, 1fr);
 	justify-items: center;
 	color: var(--mainWhite);
 	font-size: 1.2rem;
@@ -187,17 +192,17 @@ h2 {
 .hero-banner {
 	position: absolute;
 	top: 40%;
-	left: 30%;
+	left: 28%;
 }
 
 .hero-banner h2 {
 	color: var(--mainWhite);
 	text-transform: uppercase;
-	font-size: 2.5rem;
+	font-size: 1rem;
 }
 
 .name {
-	color: var(--primaryColor);
+	color: rgb(69, 218, 245);
 }
 
 .description {
@@ -209,25 +214,24 @@ h2 {
 .job-title {
 	color: var(--mainWhite);
 	font-weight: bold;
-	font-size: 1.4rem;
+	font-size: 1.5rem;
 }
 
 .banner-btn {
-	padding: 1rem 2rem;
+	padding: 0.5rem 1rem;
 	color: var(--mainWhite);
 	font-weight: bold;
-	border: 1px solid var(--primaryColor);
+	border: 2px solid rgb(2, 105, 201);
 	margin-left: 5rem;
 	border-radius: 5px;
 	transition: var(--mainTransition);
 }
 
 .banner-btn:hover {
-	padding: 1rem 2rem;
 	color: var(--mainBlack);
-	background: var(--primaryColor);
+	background: rgb(201, 181, 2);
 	font-weight: bold;
-	border: 1px solid var(--mainBlack);
+	border: 2px solid var(--mainBlack);
 	border-radius: 5px;
 }
 
@@ -256,7 +260,7 @@ h2 {
 
 	.navbar ul {
 		display: grid;
-		grid-template-columns: repeat(5, 1fr);
+		grid-template-columns: repeat(4, 1fr);
 		justify-items: center;
 	}
 	.content {
@@ -280,17 +284,11 @@ h2 {
 
 	.banner-btn {
 		padding: 1rem 2rem;
-		color: var(--mainWhite);
-		border: 1px solid var(--primaryColor);
-		margin-left: 5rem;
-	}
-
-	.banner-btn {
-		margin-left: 20rem;
+		margin-left: 15rem;
 	}
 }
 
-@media screen and (min-width: 992px) {
+@media (min-width: 992px) {
 	.main {
 		grid-template-columns: [start] 200px [col-1-end] 1fr [col-2-end] 50px [end];
 		grid-template-rows: [start] auto [row-1-end] 1fr [row-2-end] auto [end];
@@ -300,7 +298,7 @@ h2 {
 		grid-row: start/row-1-end;
 	}
 	.navbar {
-		margin-top: 1rem;
+		margin-top: 3rem;
 		grid-column: start/col-1-end;
 		grid-row: row-1-end/row-2-end;
 	}
@@ -314,10 +312,7 @@ h2 {
 		grid-column: col-2-end/end;
 		grid-row: row-1-end/row-2-end;
 	}
-	.footer {
-		grid-column: start/end;
-		grid-template-rows: row-2-end/end;
-	}
+
 	.navbar ul {
 		grid-template-columns: 1fr;
 		min-height: 100%;
@@ -326,6 +321,5 @@ h2 {
 	.sidebar {
 		grid-template-columns: 1fr;
 		align-items: center;
-		background: var(--darkGrey);
 	}
 }

@@ -28,12 +28,6 @@ const NavigationBar = (props) => {
 				</li>
 				<li>
 					<a href={'#h'} className="nav-link" onClick={props.clicked}>
-						My learning <br />
-						path
-					</a>
-				</li>
-				<li>
-					<a href={'#h'} className="nav-link" onClick={props.clicked}>
 						Contact Me
 					</a>
 				</li>

@@ -5,7 +5,6 @@ const SocialMediaSideBar = (props) => {
 		<section className="sidebar">
 			<div>F </div>
 			<div>F </div>
-			<div>F </div>
 		</section>
 	);
 };

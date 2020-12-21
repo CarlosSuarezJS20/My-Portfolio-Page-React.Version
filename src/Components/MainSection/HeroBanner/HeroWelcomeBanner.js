@@ -9,7 +9,7 @@ const HeroWelcomeBanner = () => {
 			</video>
 			<div className="hero-banner">
 				<h2>
-					Hi, I'm <strong className="name">Carlos</strong>
+					Hi, I'm <strong className="name">{'< Carlos />'}</strong>
 				</h2>
 				<p className="description">
 					<span className="job-title">Front End Developer</span> ready to build
