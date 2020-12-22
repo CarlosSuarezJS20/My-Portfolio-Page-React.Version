@@ -12,8 +12,8 @@ const HeroWelcomeBanner = () => {
 					Hi, I'm <strong className="name">{'< Carlos />'}</strong>
 				</h2>
 				<p className="description">
-					<span className="job-title">Front End Developer</span> ready to build
-					awesome, fast and interactive websites.
+					<span className="job-title">{'< Front End Developer />'}</span> ready
+					to build awesome, fast and interactive websites.
 				</p>
 				<a href="#c" className="banner-btn">
 					My Projects
