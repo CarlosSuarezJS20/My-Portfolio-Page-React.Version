@@ -7,8 +7,20 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 const SocialMediaSideBar = (props) => {
 	return (
 		<section className="sidebar">
-			<FontAwesomeIcon icon={faGithub} className="gitHub-about" />
-			<FontAwesomeIcon icon={faLinkedin} className="linkedIn-about" />
+			<a
+				href="https://github.com/CarlosSuarezJS20"
+				rel="noreferrer"
+				target="_blank"
+			>
+				<FontAwesomeIcon icon={faGithub} />
+			</a>
+			<a
+				href="https://www.linkedin.com/in/carlos-suarez-msc-a3659141/"
+				rel="noreferrer"
+				target="_blank"
+			>
+				<FontAwesomeIcon icon={faLinkedin} />
+			</a>
 		</section>
 	);
 };

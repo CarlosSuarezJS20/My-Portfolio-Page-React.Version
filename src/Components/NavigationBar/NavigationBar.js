@@ -3,6 +3,8 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFileCode, faFolderOpen } from '@fortawesome/free-solid-svg-icons';
 
+import { NavLink } from 'react-router-dom';
+
 const NavigationBar = (props) => {
 	let classesName = ['navbar'];
 
@@ -14,34 +16,45 @@ const NavigationBar = (props) => {
 		<nav className={classesName.join(' ')}>
 			<ul className="nav-list">
 				<li>
-					<a href={'#h'} className="nav-link" onClick={props.clicked}>
+					<NavLink
+						to={'/'}
+						exact
+						active={'true'}
+						className="nav-link"
+						onClick={props.clicked}
+					>
 						<FontAwesomeIcon
 							icon={faFolderOpen}
 							className="faFolderOpen-home"
 						/>
 						home
-					</a>
+					</NavLink>
 				</li>
 				<li>
-					<a href={'#h'} className="nav-link" onClick={props.clicked}>
+					<NavLink to={'/about'} className="nav-link" onClick={props.clicked}>
 						<FontAwesomeIcon icon={faFileCode} className="faFileCode-about" />
 						About
-					</a>
+					</NavLink>
 				</li>
 				<li>
-					<a href={'#h'} className="nav-link" onClick={props.clicked}>
+					<NavLink
+						to={'/projects'}
+						href={'#h'}
+						className="nav-link"
+						onClick={props.clicked}
+					>
 						<FontAwesomeIcon
 							icon={faFileCode}
 							className="faFileCode-projects"
 						/>
 						projects
-					</a>
+					</NavLink>
 				</li>
 				<li>
-					<a href={'#h'} className="nav-link" onClick={props.clicked}>
+					<NavLink to={'/contact'} className="nav-link" onClick={props.clicked}>
 						<FontAwesomeIcon icon={faFileCode} className="faFileCode-contact" />
 						Contact
-					</a>
+					</NavLink>
 				</li>
 			</ul>
 		</nav>

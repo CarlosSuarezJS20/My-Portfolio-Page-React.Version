@@ -29,27 +29,30 @@ const About = () => {
 							Let's <span className="connect">{'<Connect/>'}!</span>
 						</h2>
 						<p>
-							Need to add..Need to add..Need to add..Need to add..Need to add..
-							Need to add.. Need to add.. Need to add.. Need to add.. Need to
-							add.. Need to add.. Need to add.. Need to add.. Need to add.. Need
-							to add..
+							Hi, my name is Carlos. I’m a front end developer passionate about
+							web development and all the useful things we can build with it.
 						</p>
 						<br />
 						<p>
-							Need to add..Need to add..Need to add..Need to add..Need to add..
-							Need to add.. Need to add.. Need to add.. Need to add.. Need to
-							add.. Need to add.. add.. Need to add.. add.. Need to add.. add..
-							add.. Need to add.. add.. Need to add.. add.. Need to add.. Need
-							add.. Need to add.. add.. Need to add.. add.. Need to add.. to
-							add.. Need to add.. add.. Need to add.. add.. Need to add.. add..
-							add.. Need to add.. add.. Need to add.. add.. Need to add.. Need
-							add.. Need to add.. to add.. add..
+							Working in the ad-tech industry, I developed a strong interest in
+							programming and how everything works behind the scenes. I decided
+							to put thoughts into action and immersed myself into the
+							fascinating world of coding. I undertook different courses on
+							JavaScript HTML and CSS, however, filled with my interest to
+							improve my projects, I decided to go one step further and include
+							React.js to my skill set.
+						</p>
+						<br />
+						<p>
+							I’m currently looking for opportunities where I can expand my
+							skills and explore my creativity. My main professional goal is to
+							help companies to build interactive web pages that make them stand
+							from the rest. Ultimately, I want to work in advance and exciting
+							projects that will allow me to keep expanding my knowledge and
+							utilize the full power of different javaScript frameworks.
 						</p>
 					</div>
 					<br />
-					<a href="#/" className="btn-back-home btn-about">
-						home
-					</a>
 				</article>
 			</div>
 		</section>

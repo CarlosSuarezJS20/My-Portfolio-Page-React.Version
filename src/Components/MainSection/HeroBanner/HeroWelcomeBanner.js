@@ -1,5 +1,6 @@
 import React from 'react';
 import video from '../../../videos/video.mp4';
+import { NavLink } from 'react-router-dom';
 
 const HeroWelcomeBanner = () => {
 	return (
@@ -15,9 +16,9 @@ const HeroWelcomeBanner = () => {
 					<span className="job-title">{'< Front End Developer />'}</span> ready
 					to build awesome, fast and interactive websites.
 				</p>
-				<a href="#c" className="banner-btn">
+				<NavLink to={'/projects'} className="banner-btn">
 					My Projects
-				</a>
+				</NavLink>
 			</div>
 		</div>
 	);

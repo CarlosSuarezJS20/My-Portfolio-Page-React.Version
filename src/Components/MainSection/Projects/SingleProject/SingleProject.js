@@ -1,5 +1,4 @@
 import React from 'react';
-import image from '../../../../images/login-bw-app.png';
 // import {
 // 	faCss3Alt,
 // 	faReact,
@@ -14,11 +13,15 @@ const SingleProject = (props) => {
 		<div className="card">
 			{/* front of card */}
 			<div className="card-side card-front">
-				<img src={image} alt="budge-app" />
+				<img src={props.projectImg} alt="budge-app" />
 				<div className="card-info">
 					<h3>{props.projectTitle}</h3>
-					<p>{props.projectDescription}</p>
-					<span>more info? just flip!</span>
+					<div className="description-holder">
+						<p>{props.projectDescription1}</p>
+						<br />
+						<p>{props.projectDescription2}</p>
+					</div>
+					<h5>more info? just flip!</h5>
 					<div className="footer-languages">
 						<h4>Language</h4>
 						{props.projectLanguages.map((l) => (
@@ -37,7 +40,7 @@ const SingleProject = (props) => {
 					<h4>Visit</h4>
 					{props.projectLinks.map((l, index) => {
 						return (
-							<a key={index} href={l.link}>
+							<a key={index} href={l.link} rel="noreferrer" target="_blank">
 								<FontAwesomeIcon
 									key={index}
 									className="back-card-link"
