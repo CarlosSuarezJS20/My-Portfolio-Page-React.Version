@@ -38,7 +38,7 @@ const About = () => {
 							programming and how everything works behind the scenes. I decided
 							to put thoughts into action and immersed myself into the
 							fascinating world of coding. I undertook different courses on
-							JavaScript HTML and CSS, however, filled with my interest to
+							JavaScript, HTML and CSS, however, driven by my interest to
 							improve my projects, I decided to go one step further and include
 							React.js to my skill set.
 						</p>
@@ -46,10 +46,10 @@ const About = () => {
 						<p>
 							I’m currently looking for opportunities where I can expand my
 							skills and explore my creativity. My main professional goal is to
-							help companies to build interactive web pages that make them stand
+							help companies building interactive web pages that make them stand
 							from the rest. Ultimately, I want to work in advance and exciting
 							projects that will allow me to keep expanding my knowledge and
-							utilize the full power of different javaScript frameworks.
+							utilize the full power of the different javaScript frameworks.
 						</p>
 					</div>
 					<br />

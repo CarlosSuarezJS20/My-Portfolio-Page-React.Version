@@ -1,11 +1,4 @@
 import React from 'react';
-// import {
-// 	faCss3Alt,
-// 	faReact,
-// 	faHtml5,
-// 	faJsSquare,
-// 	faNodeJs,
-// } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const SingleProject = (props) => {

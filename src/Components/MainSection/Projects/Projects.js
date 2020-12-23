@@ -23,8 +23,8 @@ const Projects = () => {
 			id: 1,
 			projectTitle: 'World Budget App v1.0',
 			image: imageBwV1,
-			description1: `The idea behind this project was to create a very fast way so travellers could find how much things cost in their holidays destination. Users can add, delete, edit existing items and filter as they wish.`,
-			description2: `This is a single page app, powered by javaScript. I have added Node.js and use PASSPORT, BCRYPT, EFLASH libraries to make authentication more realistic. As the app uses NODE.JS, I have hosted this website in HEROKU and use EJS to interact with the element tree. Local storage as this was a prototype for testing purposes.`,
+			description1: `The idea behind this project was to create a very fast way for travellers to find how much things cost in their holidays destination. Users can add, delete, edit existing items and filter as they wish.`,
+			description2: `This is a single page app, powered by javaScript. I have added Node.js and use PASSPORT, BCRYPT, EFLASH libraries to make authentication more realistic. As the app uses NODE.JS, I have hosted this website in HEROKU and use EJS to interact with the elements tree. Local storage was used as this was a prototype for testing purposes.`,
 			languages: [faJsSquare, faHtml5, faCss3Alt, faNodeJs],
 			links: [
 				{
@@ -39,7 +39,7 @@ const Projects = () => {
 		},
 		{
 			id: 2,
-			projectTitle: 'World Budget App v2.0 - React',
+			projectTitle: 'World Budget App v2.0',
 			image: imageBwV2,
 			description1: `Budget World 2.0 is a fully functional application built using React.js classes. To have more flexibility when manipulating data, I have included REDUX for state management. Furthermore, I’m using FIREBASE to store data and manage the API operations. `,
 			description2: `Authentication is fully functional and routing helps for limiting page accessibility.`,
@@ -98,7 +98,7 @@ const Projects = () => {
 		},
 		{
 			id: 6,
-			projectTitle: 'Portfolio Page',
+			projectTitle: 'My Portfolio Page',
 			image: myPortfolio,
 			description: 'To add... To add... To add...To add...To add...',
 			languages: [faReact],
