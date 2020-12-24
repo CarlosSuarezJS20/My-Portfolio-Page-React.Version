@@ -8,7 +8,7 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 
 ReactDOM.render(
-	<BrowserRouter>
+	<BrowserRouter basename="/Carlos-Suarez-portfolio">
 		<App />
 	</BrowserRouter>,
 	document.getElementById('root')

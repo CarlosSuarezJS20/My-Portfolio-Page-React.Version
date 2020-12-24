@@ -10,12 +10,10 @@ const App = () => {
 	const [showDropNavBar, setShowDropNavBar] = useState(false);
 
 	const showDropNavBarHandler = () => {
-		console.log('click');
 		setShowDropNavBar(true);
 	};
 
 	const hideDropNavBarHandler = () => {
-		console.log('click');
 		setShowDropNavBar(false);
 	};
 
