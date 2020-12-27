@@ -117,8 +117,16 @@ const Projects = () => {
 			description2: `This is a Single Page Application, powered by ROUTING-REACT library and is build with REACT HOOKS. Fully RESPONSIVE`,
 			languages: [faReact],
 			links: [
-				{ link: '/#add', icon: faGithub },
-				{ link: '/#add1', icon: faWindowMaximize },
+				{
+					link:
+						'https://github.com/CarlosSuarezJS20/My-Portfolio-Page-React.Version',
+					icon: faGithub,
+				},
+				{
+					link:
+						'https://my-portfolio-6679d.web.app/Carlos-Suarez-portfolio/projects',
+					icon: faWindowMaximize,
+				},
 			],
 		},
 		{
