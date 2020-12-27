@@ -122,11 +122,6 @@ const Projects = () => {
 						'https://github.com/CarlosSuarezJS20/My-Portfolio-Page-React.Version',
 					icon: faGithub,
 				},
-				{
-					link:
-						'https://my-portfolioweb-ba888.web.app/Carlos-Suarez-portfolio/projects',
-					icon: faWindowMaximize,
-				},
 			],
 		},
 		{
