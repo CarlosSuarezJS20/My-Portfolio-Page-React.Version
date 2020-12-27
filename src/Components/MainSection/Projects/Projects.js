@@ -141,7 +141,6 @@ const Projects = () => {
 					link: 'https://github.com/CarlosSuarezJS20/CodeWar-Challenges',
 					icon: faGithub,
 				},
-				// { link: '/#add1', icon: faWindowMaximize },
 			],
 		},
 	]);
