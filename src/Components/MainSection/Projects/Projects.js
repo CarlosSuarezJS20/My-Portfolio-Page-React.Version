@@ -124,7 +124,7 @@ const Projects = () => {
 				},
 				{
 					link:
-						'https://my-portfolio-6679d.web.app/Carlos-Suarez-portfolio/projects',
+						'https://my-portfolioweb-ba888.web.app/Carlos-Suarez-portfolio/projects',
 					icon: faWindowMaximize,
 				},
 			],
