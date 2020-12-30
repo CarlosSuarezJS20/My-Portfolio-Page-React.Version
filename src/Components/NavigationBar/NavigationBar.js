@@ -21,7 +21,10 @@ const NavigationBar = (props) => {
 						exact
 						active={'true'}
 						className="nav-link"
-						onClick={props.clicked}
+						onClick={() => {
+							props.clicked();
+							props.hideBackDrop();
+						}}
 					>
 						<FontAwesomeIcon
 							icon={faFolderOpen}
@@ -31,7 +34,14 @@ const NavigationBar = (props) => {
 					</NavLink>
 				</li>
 				<li>
-					<NavLink to={'/about'} className="nav-link" onClick={props.clicked}>
+					<NavLink
+						to={'/about'}
+						className="nav-link"
+						onClick={() => {
+							props.clicked();
+							props.hideBackDrop();
+						}}
+					>
 						<FontAwesomeIcon icon={faFileCode} className="faFileCode-about" />
 						About
 					</NavLink>
@@ -41,7 +51,10 @@ const NavigationBar = (props) => {
 						to={'/projects'}
 						href={'#h'}
 						className="nav-link"
-						onClick={props.clicked}
+						onClick={() => {
+							props.clicked();
+							props.hideBackDrop();
+						}}
 					>
 						<FontAwesomeIcon
 							icon={faFileCode}
@@ -51,12 +64,28 @@ const NavigationBar = (props) => {
 					</NavLink>
 				</li>
 				<li>
-					<NavLink to={'/contact'} className="nav-link" onClick={props.clicked}>
+					<NavLink
+						to={'/contact'}
+						className="nav-link"
+						onClick={() => {
+							props.clicked();
+							props.hideBackDrop();
+						}}
+					>
 						<FontAwesomeIcon icon={faFileCode} className="faFileCode-contact" />
 						Contact
 					</NavLink>
 				</li>
 			</ul>
+			<button
+				className="nav-button"
+				onClick={() => {
+					props.clicked();
+					props.hideBackDrop();
+				}}
+			>
+				x
+			</button>
 		</nav>
 	);
 };

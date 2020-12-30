@@ -6,12 +6,22 @@ const Header = (props) => {
 	return (
 		<header className="header">
 			<h1 className="header-title">
-				carlos suarez <span className="portfolio">{'< portfolio />'}</span>
+				carlos suarez' <span className="portfolio">{'< portfolio />'}</span>
 			</h1>
 			<FontAwesomeIcon
 				icon={faBars}
 				className="burger-menu-icon"
-				onClick={props.display ? props.clickedClose : props.clickedOpen}
+				onClick={
+					props.display
+						? () => {
+								props.clickedClose();
+								props.hideBackDrop();
+						  }
+						: () => {
+								props.clickedOpen();
+								props.showBackDrop();
+						  }
+				}
 			/>
 		</header>
 	);

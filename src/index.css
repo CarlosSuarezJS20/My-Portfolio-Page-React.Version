@@ -171,6 +171,30 @@ h2 {
 	z-index: 100;
 }
 
+.nav-button {
+	margin-left: 8rem;
+	background: var(--mainBlack);
+	color: var(--mainWhite);
+	border: 1px solid var(--mainWhite);
+	padding: 5px;
+}
+
+.backdrop {
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	z-index: 10;
+	left: 0;
+	top: 0;
+	background: rgba(0, 0, 0, 0.5);
+	display: none;
+}
+
+.show-backdrop {
+	display: block;
+}
+
 .show {
 	transition: var(--mainTransition);
 	display: block;
@@ -347,6 +371,14 @@ h2 {
 		border-radius: 0;
 		padding-right: 0;
 		padding-bottom: 0;
+	}
+
+	.backdrop {
+		display: none;
+	}
+
+	.nav-button {
+		display: none;
 	}
 
 	.burger-menu-icon {
