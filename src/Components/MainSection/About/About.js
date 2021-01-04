@@ -29,18 +29,17 @@ const About = () => {
 							Let's <span className="connect">{'<Connect/>'}!</span>
 						</h2>
 						<p>
-							Hi, my name is Carlos. I’m a front end developer passionate about
+							Hi, my name is Carlos. I’m a front-end developer passionate about
 							web development and all the useful things we can build with it.
 						</p>
 						<br />
 						<p>
-							Working in the ad-tech industry, I developed a strong interest in
-							programming and how everything works behind the scenes. I decided
-							to put thoughts into action and immersed myself into the
-							fascinating world of coding. I undertook different courses on
-							JavaScript, HTML and CSS, however, driven by my interest to
-							improve my projects, I decided to go one step further and include
-							React.js to my skill set.
+							During my time working in digital advertising, I developed a
+							strong interest in programming. I decided to put thoughts into
+							action and immersed myself into the fascinating world of coding. I
+							have undertaken many courses on JavaScript, HTML and CSS, however,
+							to improve my projects, I decided to go one step further and
+							included React.js to my skill set.
 						</p>
 						<br />
 						<p>
