@@ -71,7 +71,6 @@ h2 {
 .section-center {
 	width: 97vw;
 	margin: 0 auto;
-	max-width: 970px;
 }
 
 .section-title {
@@ -121,7 +120,8 @@ h2 {
 
 @media (min-width: 1100px) {
 	.section-center {
-		width: 80vw;
+		width: 90vw;
+		max-width: 1000px;
 	}
 }
 /* HEADER */
@@ -252,7 +252,6 @@ h2 {
 .content {
 	height: 85vh;
 	margin-top: 3.5rem;
-	overflow-y: scroll;
 }
 
 .content p {
@@ -309,7 +308,7 @@ h2 {
 .hero-banner {
 	position: absolute;
 	top: 40%;
-	left: 15%;
+	left: 12%;
 	max-width: 300px;
 }
 
@@ -496,6 +495,7 @@ h2 {
 
 .about-title p {
 	max-width: 600px;
+	font-size: 0.8rem;
 }
 
 .btn-about {
@@ -504,15 +504,25 @@ h2 {
 
 @media (min-width: 768px) {
 	.about {
-		margin-left: 3rem;
+		margin: 1rem 0;
+	}
+
+	.title {
+		padding-bottom: 3rem;
 	}
 
 	.about-center {
 		display: grid;
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: 1fr;
 		margin-top: 3rem;
 	}
+
+	.about-title p {
+		max-width: 600px;
+		font-size: 1rem;
+	}
 }
+
 @media (min-width: 992px) {
 	.content {
 		margin-top: 0rem;
@@ -560,11 +570,85 @@ h2 {
 	}
 }
 
+@media (min-width: 1100px) {
+	.about-center {
+		display: grid;
+		padding: 2rem;
+		grid-template-columns: 1fr 1fr;
+		margin-top: 3rem;
+	}
+
+	.title {
+		margin-top: 6rem;
+	}
+
+	.title h2 {
+		font-size: 2rem;
+		margin-bottom: 1rem;
+	}
+
+	.title h3 {
+		font-size: 1rem;
+	}
+
+	.about-title {
+		margin-top: 2rem;
+		font-size: 1rem;
+	}
+
+	.about-title h2 {
+		margin-bottom: 1rem;
+	}
+
+	.about-title p {
+		font-size: 0.8rem;
+	}
+}
+
+@media (min-width: 1300px) {
+	.about-center {
+		display: grid;
+		padding: 2rem;
+		grid-template-columns: 450px 600px;
+		margin-top: 3rem;
+	}
+
+	.title {
+		margin-top: 6rem;
+	}
+
+	.title h2 {
+		font-size: 3rem;
+		margin-bottom: 1rem;
+	}
+
+	.title h3 {
+		font-size: 2rem;
+	}
+
+	.about-title {
+		margin-top: 2rem;
+		font-size: 1rem;
+	}
+
+	.about-title h2 {
+		font-size: 3rem;
+		margin-bottom: 2rem;
+	}
+
+	.about-title p {
+		font-size: 1.3rem;
+	}
+}
+
 /* PROJECTS SECTION  */
 
 .section-projects {
+	height: 100%;
 	background: black;
 	color: var(--mainWhite);
+	overflow-y: scroll;
+	scrollbar-face-color: black;
 }
 .projects-title {
 	color: rgb(201, 181, 2);
@@ -697,12 +781,12 @@ Contact
 }
 
 .contact-container {
-	margin-top: 4rem;
+	margin-top: 1rem;
 }
 
 .contact-form,
 .contact-info {
-	margin: 1rem 0;
+	margin: 0;
 }
 
 .contact-item {
@@ -728,7 +812,7 @@ Contact
 	background: var(--mainWhite);
 	border-radius: var(--radius);
 	border: 1px solid rgb(2, 105, 201);
-	padding: 2rem;
+	padding: 1rem;
 	text-align: center;
 	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 	transition: var(--transition);
@@ -795,8 +879,42 @@ Contact
 
 	.contact-container {
 		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-		margin-top: 10rem;
+		grid-template-columns: 1fr;
+		margin-top: 2rem;
+	}
+}
+
+@media (min-width: 1090px) {
+	.contact {
+		height: 90vh;
+	}
+
+	.contact-info,
+	.contact.form {
+		margin: 0 auto;
+	}
+
+	.contact-container {
+		display: grid;
+		grid-template-columns: 500px 400px;
+		margin-top: 6rem;
+	}
+}
+
+@media (min-width: 1390px) {
+	.contact {
+		height: 90vh;
+	}
+
+	.contact-info,
+	.contact.form {
+		margin: 0 auto;
+	}
+
+	.contact-container {
+		display: grid;
+		grid-template-columns: 500px 400px;
+		margin-top: 15rem;
 	}
 }
 
@@ -840,7 +958,6 @@ Contact
 	}
 	.content {
 		margin-top: 3.5rem;
-
 		grid-column: col-1-end/col-2-end;
 		grid-row: row-1-end/row-2-end;
 	}

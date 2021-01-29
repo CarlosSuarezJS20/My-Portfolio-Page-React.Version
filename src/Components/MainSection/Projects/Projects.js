@@ -7,6 +7,7 @@ import sodasProject from '../../../images/sodasV1.png';
 import sodasProjectReact from '../../../images/sodasV2.png';
 import myPortfolio from '../../../images/myPortfolio-react.png';
 import codeWarsImg from '../../../images/kata.png';
+import dogImg from '../../../images/dogs.png';
 
 import { faWindowMaximize } from '@fortawesome/free-solid-svg-icons';
 import {
@@ -22,18 +23,18 @@ const Projects = () => {
 	const [projects] = useState([
 		{
 			id: 1,
-			projectTitle: 'World Budget App v1.0',
-			image: imageBwV1,
-			description1: `The idea behind this project was to create a very fast way for travellers to find how much things cost in their holidays destination. Users can add, delete, edit existing items and filter as they wish.`,
-			description2: `This is a single page app, powered by javaScript. I have added Node.js and use PASSPORT, BCRYPT, EFLASH libraries to make authentication more realistic. As the app uses NODE.JS, I have hosted this website in HEROKU and use EJS to interact with the elements tree. Local storage was used as this was a prototype for testing purposes. Fully RESPONSIVE`,
-			languages: [faJsSquare, faHtml5, faCss3Alt, faNodeJs],
+			projectTitle: 'Puppy Finder React',
+			image: dogImg,
+			description1: `This web-app helps users find their ideal puppy dog. they can find dogs depending on breed, temperaments and sizes. Try it out!`,
+			description2: `This is a single page app, powered by React.js. I have used React-Routing and Redux for state management. I have included additional libraries such as AXIOS, React-Slick Page is fully RESPONSIVE`,
+			languages: [faReact],
 			links: [
 				{
-					link: 'https://github.com/CarlosSuarezJS20/World-budget-node.js',
+					link: 'https://github.com/CarlosSuarezJS20/puppyLand',
 					icon: faGithub,
 				},
 				{
-					link: 'https://fierce-basin-44657.herokuapp.com/login',
+					link: 'https://puppyfinder-378cf.web.app/',
 					icon: faWindowMaximize,
 				},
 			],
@@ -59,6 +60,24 @@ const Projects = () => {
 		},
 		{
 			id: 3,
+			projectTitle: 'World Budget App v1.0',
+			image: imageBwV1,
+			description1: `The idea behind this project was to create a very fast way for travellers to find how much things cost in their holidays destination. Users can add, delete, edit existing items and filter as they wish.`,
+			description2: `This is a single page app, powered by javaScript. I have added Node.js and use PASSPORT, BCRYPT, EFLASH libraries to make authentication more realistic. As the app uses NODE.JS, I have hosted this website in HEROKU and use EJS to interact with the elements tree. Local storage was used as this was a prototype for testing purposes. Fully RESPONSIVE`,
+			languages: [faJsSquare, faHtml5, faCss3Alt, faNodeJs],
+			links: [
+				{
+					link: 'https://github.com/CarlosSuarezJS20/World-budget-node.js',
+					icon: faGithub,
+				},
+				{
+					link: 'https://fierce-basin-44657.herokuapp.com/login',
+					icon: faWindowMaximize,
+				},
+			],
+		},
+		{
+			id: 4,
 			projectTitle: 'Drag and Drop To Do List',
 			image: toDoList,
 			description1: `Simple but powerful. This app allows users to add their daily tasks, but also segment them into different priorities. They can DRAG and DROP between the different buckets and reactivate done tasks if required.`,
@@ -76,7 +95,7 @@ const Projects = () => {
 			],
 		},
 		{
-			id: 4,
+			id: 5,
 			projectTitle: 'Rainbow Sodas UK Ecommerce',
 			image: sodasProject,
 			description1: `This project allows me to see how different parts of an ecommerce work together and share information to render information and the appropriate elements. Features include: filtering, quantity adjustments, cart display.  `,
@@ -94,7 +113,7 @@ const Projects = () => {
 			],
 		},
 		{
-			id: 5,
+			id: 6,
 			projectTitle: 'React - Rainbow Sodas UK',
 			image: sodasProjectReact,
 			description1: `This project is built on React.js using REACT HOOKS. For this version, I use Context, useState() and useEffect() to manage the state elements and facilitate the flow of data through different components. Furthermore, I’m hosting this project database in FireBase and fetching the products list from the same server. I’m in the process of adding a reducer to simplify the code and specify the different state actions this requires.  `,
@@ -110,7 +129,7 @@ const Projects = () => {
 			],
 		},
 		{
-			id: 6,
+			id: 7,
 			projectTitle: 'My Portfolio Page',
 			image: myPortfolio,
 			description1: `The idea behind this project was to create a showcase of all my coding projects for the past year. I tried to keep the UI as simple as possible without any fluff. `,
@@ -125,7 +144,7 @@ const Projects = () => {
 			],
 		},
 		{
-			id: 7,
+			id: 8,
 			projectTitle: 'Code Wars - Ongoing',
 			image: codeWarsImg,
 			description1: `Helps me build my problem solving skills and allow me to practice different concepts learned in JavaScript`,

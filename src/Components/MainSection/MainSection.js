@@ -14,10 +14,6 @@ const MainSection = () => {
 			<Route path={'/contact'} component={Contact} />
 			<Route path={'/about'} component={About} />
 			<Route path={'/'} exact component={HeroWelcomeBanner} />
-			{/* <HeroWelcomeBanner /> */}
-			{/* <About /> */}
-			{/* <Projects /> */}
-			{/* <Contact /> */}
 		</section>
 	);
 };
