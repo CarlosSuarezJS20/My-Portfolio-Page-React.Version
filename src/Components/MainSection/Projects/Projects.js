@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import SingleProject from './SingleProject/SingleProject';
 import imageBwV1 from '../../../images/bwV1.png';
-import imageBwV2 from '../../../images/bwV2.png';
+import imageBwV2 from '../../../images/newBudgetW.png';
 import toDoList from '../../../images/TodoList.png';
 import sodasProject from '../../../images/sodasV1.png';
 import sodasProjectReact from '../../../images/sodasV2.png';
@@ -22,24 +22,6 @@ import {
 const Projects = () => {
 	const [projects] = useState([
 		{
-			id: 1,
-			projectTitle: 'Puppy Finder React',
-			image: dogImg,
-			description1: `This web-app helps users find their ideal puppy dog. they can find dogs depending on breed, temperaments and sizes. Try it out!`,
-			description2: `This is a single page app, powered by React.js. I have used React-Routing and Redux for state management. I have included additional libraries such as AXIOS, React-Slick Page is fully RESPONSIVE`,
-			languages: [faReact],
-			links: [
-				{
-					link: 'https://github.com/CarlosSuarezJS20/puppyLand',
-					icon: faGithub,
-				},
-				{
-					link: 'https://puppyfinder-378cf.web.app/',
-					icon: faWindowMaximize,
-				},
-			],
-		},
-		{
 			id: 2,
 			projectTitle: 'World Budget App v2.0',
 			image: imageBwV2,
@@ -54,6 +36,24 @@ const Projects = () => {
 				},
 				{
 					link: 'https://budget-world-reactjs.web.app/budget-world/login',
+					icon: faWindowMaximize,
+				},
+			],
+		},
+		{
+			id: 1,
+			projectTitle: 'Puppy Finder React',
+			image: dogImg,
+			description1: `This web-app helps users find their ideal puppy dog. they can find dogs depending on breed, temperaments and sizes. Try it out!`,
+			description2: `This is a single page app, powered by React.js. I have used React-Routing and Redux for state management. I have included additional libraries such as AXIOS, React-Slick Page is fully RESPONSIVE`,
+			languages: [faReact],
+			links: [
+				{
+					link: 'https://github.com/CarlosSuarezJS20/puppyLand',
+					icon: faGithub,
+				},
+				{
+					link: 'https://puppyfinder-378cf.web.app/',
 					icon: faWindowMaximize,
 				},
 			],
